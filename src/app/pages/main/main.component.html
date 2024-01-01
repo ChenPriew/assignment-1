@@ -1,0 +1,135 @@
+<mat-toolbar class="sticky-top">
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 64px;
+    "
+  >
+    <div class="contain">
+      <span
+        ><img
+          style="width: 50px"
+          src="https://ng-hw-1.firebaseapp.com/assets/images/icon.png"
+          alt=""
+      /></span>
+      <span style="font-size: 32px; font-weight: bold; color: white"
+        >Game of Thrones</span
+      >
+    </div>
+    <div class="contain gap">
+      <button mat-button class="text">Home</button>
+      <button mat-button class="text">Story</button>
+      <button mat-button class="text">Episodes</button>
+      <button mat-button class="text">Videos</button>
+      <button mat-button class="text" routerLink="/authen">Log out</button>
+    </div>
+  </div>
+</mat-toolbar>
+<div class="container">
+  <div class="row mt-4">
+    <div class="col-4">
+      <img
+        style="width: 350px"
+        src="https://ng-hw-1.firebaseapp.com/assets/images/photo.jpg"
+        alt=""
+      />
+    </div>
+    <div class="col-8">
+      <h2>Daenerys Targaryen</h2>
+      <hr />
+      <h4>Character</h4>
+      <h4>
+        Daenerys Targaryen is the daughter of King Aerys II Targaryen (also
+        referred to as "The Mad King") and his sister-wife Queen Rhaella, and is
+        one of the last survivors of House Targaryen. She serves as the
+        third-person point-of-view character of 31 chapters of A Game of
+        Thrones, A Clash of Kings, A Storm of Swords, and A Dance with Dragons.
+        This makes her the series' fourth most prominent narrative voice after
+        Tyrion Lannister, Jon Snow and Arya Stark.
+      </h4>
+    </div>
+  </div>
+  <div class="row mt-4">
+    <div class="col-6">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Ydi80YrCnPY?si=YUdDJ9LslyV5pfKi"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <div class="col-6">
+      <h4>Personality</h4>
+      <h4>
+        Daenerys is most often described as uncommonly beautiful, with long,
+        pale silver-gold hair and purple eyes. She is slender and pale, although
+        taller than some of her female ancestors. Tales of Daenerys's beauty are
+        numerous, and throughout the novels she encounters countless suitors who
+        seek her hand in marriage, sometimes to gain control of her three
+        dragons. She is fluent in the Common Tongue of Westeros, Dothraki, High
+        Valyrian and bastard Valyrian, which she speaks with a Tyroshi accent.
+        Over the course of the first three novels she becomes fluent in the
+        Dothraki language and Ghiscari, spoken in the slave cities in Essos.
+      </h4>
+    </div>
+  </div>
+  <hr />
+  <div class="dense-5">
+    <mat-label style="color: white">Comment</mat-label>
+    <mat-form-field
+      appearance="outline"
+      style="width: 100%"
+      color="accent"
+    >
+      <mat-label style="color: white">What do you feel about this?</mat-label>
+      <textarea
+        style="height: 100px"
+        matInput
+        placeholder="Ex. It makes me feel..."
+      ></textarea>
+    </mat-form-field>
+  </div>
+
+  <div style="display: flex; justify-content: space-between">
+    <div>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="favorite"
+        color="primary"
+      ></mat-icon>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="favorite"
+        color="primary"
+      ></mat-icon>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="favorite"
+        color="primary"
+      ></mat-icon>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="favorite"
+        color="primary"
+      ></mat-icon>
+      <mat-icon
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="favorite"
+        color="primary"
+      ></mat-icon>
+    </div>
+    <div>
+      <button mat-raised-button>Sent</button>
+    </div>
+  </div>
+</div>
