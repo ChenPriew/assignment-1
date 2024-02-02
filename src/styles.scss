@@ -38,7 +38,7 @@ $assignment-1-theme: mat.define-dark-theme(
   $assignment-1-primary: mat.define-palette(mat.$indigo-palette);
   $assignment-1-accent: mat.define-palette(mat.$gray-palette, 900);
   $assignment-1-warn: mat.define-palette(mat.$red-palette);
-  
+
   $assignment-1-theme: mat.define-light-theme(
     (
       color: (
@@ -81,4 +81,3 @@ body {
 .dense-5 {
   @include mat.all-component-densities(-5);
 }
-

@@ -1,52 +1,85 @@
-<div class="light" style="
+<div
+  class="light"
+  style="
     width: auto;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: darkgray;
-  ">
+  "
+>
   <mat-card style="width: 400px">
     <mat-card-header style="display: unset">
-      <mat-card-title style="
+      <mat-card-title
+        style="
           display: flex;
           justify-content: center;
           align-items: center;
           gap: 5px;
-        ">
-        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="lock"></mat-icon>
+        "
+      >
+        <mat-icon
+          aria-hidden="false"
+          aria-label="Example home icon"
+          fontIcon="lock"
+        ></mat-icon>
         Login to My System
       </mat-card-title>
-      <mat-card-subtitle class="my-2" style="width: 100%">Please enter username and password</mat-card-subtitle>
+      <mat-card-subtitle class="my-2" style="width: 100%"
+        >Please enter username and password</mat-card-subtitle
+      >
     </mat-card-header>
     <mat-card-content>
       <div class="example-container">
-        <mat-form-field appearance="outline" class="dense-2" style="width: 100%" color="accent">
+        <mat-form-field
+          appearance="outline"
+          class="dense-2"
+          style="width: 100%"
+          color="accent"
+        >
           <mat-label>Enter your email</mat-label>
-          <input matInput placeholder="pat@example.com" [formControl]="email" required />
+          <input
+            matInput
+            placeholder="pat@example.com"
+            [formControl]="email"
+            required
+          />
           @if (email.invalid) {
           <mat-error>{{ getErrorMessage() }}</mat-error>
           }
         </mat-form-field>
       </div>
       <div class="example-container">
-        <mat-form-field appearance="outline" class="dense-2" style="width: 100%" color="accent">
+        <mat-form-field
+          appearance="outline"
+          class="dense-2"
+          style="width: 100%"
+          color="accent"
+        >
           <mat-label>Enter your password</mat-label>
           <input matInput [type]="hide ? 'password' : 'text'" />
-          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
-            [attr.aria-pressed]="hide">
+          <button
+            mat-icon-button
+            matSuffix
+            (click)="hide = !hide"
+            [attr.aria-label]="'Hide password'"
+            [attr.aria-pressed]="hide"
+          >
             <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
           </button>
         </mat-form-field>
       </div>
     </mat-card-content>
     <mat-card-actions>
-      <div style="
+      <div
+        style="
           display: flex;
           flex-direction: row;
           justify-content: space-between;
           width: 100%;
-        ">
+        "
+      >
         <button mat-button>Sign up</button>
         <button mat-raised-button color="primary" routerLink="">Log in</button>
       </div>

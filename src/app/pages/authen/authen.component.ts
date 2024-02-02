@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
     MatInputModule,
     MatIconModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
   ],
   templateUrl: './authen.component.html',
   styleUrl: './authen.component.scss',
